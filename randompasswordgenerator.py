@@ -11,14 +11,14 @@ print("INFO >> Password generated:", generated_password)
 
 # Try to copy the generated password to clipboard (MacOS)
 try:
-    subprocess.run("pbcopy", universal_newlines=True, input=password_generator())
+    subprocess.run("pbcopy", universal_newlines=True, input=generated_password)
     print('INFO >> Password pasted to clipboard (MacOS)')
 except FileNotFoundError:
     print('INFO >> Not running MacOS')
 
 # Try to copy the generated password to clipboard (Windows)
 try:
-    subprocess.run("clip", universal_newlines=True, input=password_generator())
+    subprocess.run("clip", universal_newlines=True, input=generated_password)
     print('INFO >> Password pasted to clipboard (Windows)')
 except FileNotFoundError:
     print('INFO >> Not running Windows')
@@ -29,3 +29,5 @@ except FileNotFoundError:
 #    print('INFO >> Password pasted to clipboard (Linux/xclip)')
 #except FileNotFoundError:
 #   print('INFO >> Not running Linux')
+
+# N0kP?qp9Yonoqb5:q5QH/zI/z
